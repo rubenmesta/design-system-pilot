@@ -4,15 +4,11 @@ import { Hero, Card, Navbar, SectionWithImage, Footer } from 'ds-zulu';
 
 import { sections, cards } from './data';
 
-function App() {
+function Screen2() {
   return (
     <div className="App">
       <Navbar />
-      <Hero
-        image={'/img/hero.jpg'}
-        title={'Steakhouse'}
-        subhtitle={'Lorem ipsum lorem ipsum'}
-      />
+
       {sections.map((section) => {
         return (
           <SectionWithImage
@@ -24,18 +20,7 @@ function App() {
           />
         );
       })}
-      <CardsContainer>
-        {cards.map((card) => {
-          return (
-            <Card
-              image={card.image}
-              title={card.title}
-              body={card.body}
-              buttonText={card.buttonText}
-            />
-          );
-        })}
-      </CardsContainer>
+
       <Footer />
     </div>
   );
@@ -48,4 +33,4 @@ const CardsContainer = styled.div({
   justifyContent: 'center',
 });
 
-export default App;
+export default Screen2;
