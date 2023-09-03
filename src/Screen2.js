@@ -1,8 +1,8 @@
 import './App.css';
 import styled from '@emotion/styled';
-import { Hero, Card, Navbar, SectionWithImage, Footer } from 'ds-zulu';
+import { Navbar, SectionWithImage, Footer } from 'ds-zulu';
 
-import { sections, cards } from './data';
+import { sections } from './data';
 
 function Screen2() {
   return (
